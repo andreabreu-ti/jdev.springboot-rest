@@ -1,0 +1,6 @@
+Fonrt-end
+
+--> Bootstrap;
+--> Javascript
+--> JQuery
+--> Ajax
