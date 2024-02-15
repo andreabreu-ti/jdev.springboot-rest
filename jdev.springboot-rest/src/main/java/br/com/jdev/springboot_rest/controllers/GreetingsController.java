@@ -108,9 +108,10 @@ public class GreetingsController {
 	@GetMapping(value = "buscaruserid")
 	@ResponseBody
 	public ResponseEntity<Usuario> buscaruserid(@RequestParam(name = "iduser") Long iduser){
-		Usuario usuario = usuarioRepository.findById(iduser).get();
 		
+		Usuario usuario = usuarioRepository.findById(iduser).get();
 		return new ResponseEntity<Usuario>(usuario, HttpStatus.OK);
+		
 	}
 	
 	/**
@@ -119,10 +120,44 @@ public class GreetingsController {
 	 */
 	@PutMapping(value = "atualizar")
 	@ResponseBody
-	public ResponseEntity<Usuario> atualizar(@RequestBody Usuario usuario) {
+	public ResponseEntity<?> atualizar(@RequestBody Usuario usuario) {
 
+		if (usuario.getId() == null) {
+			return new ResponseEntity<String>("Id não foi informado para atualização.", HttpStatus.OK);
+		}
+		
 		Usuario user = usuarioRepository.saveAndFlush(usuario);
 		return new ResponseEntity<Usuario>(user, HttpStatus.OK);
 	}
+	
+	
+	/**
+	 * Método para buscar por nome
+	 * 
+	 * .trim(), retira espaços vazios
+	 * 
+	 */
+	@GetMapping(value = "buscarPorNome")
+	@ResponseBody
+	public ResponseEntity<List<Usuario>> buscarPorNome(@RequestParam(name = "name") String name){
+		
+		List<Usuario> usuario = usuarioRepository.buscarPorNome(name.trim().toUpperCase());
+		return new ResponseEntity<List<Usuario>>(usuario, HttpStatus.OK);
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }

@@ -1,0 +1,16 @@
+BUILD
+
+1 - Entrar na pasta do projeto --> propriedades  C:\Users\aandd\git\JDev\jdev.springboot-rest\jdev.springboot-rest
+
+2 - Entra no CMD colando o caminho da pasta do projeto
+
+3 - Limpar o projeto e gerar o pacote = mvn clear package
+
+4 - Após gerado com sucesso, o projeto está na pasta target;
+
+5 - Colocar o log do JAVA para ser exibido --> Iniciar / Configurar JAVA / Mostrar Console JAVA
+
+6 - Entre na pasta do projeto gerado --> propriedes da pasta target para localizar o projeto "buidado" C:\Users\aandd\git\JDev\jdev.springboot-rest\jdev.springboot-rest\target
+
+7 - Digite o comando java -jar <nome do projeto.jar> 
+	jdev.springboot-rest-1.0.0.jar
