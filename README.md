@@ -21,6 +21,7 @@ Sistema básico de um cadastr com CRUD completo.
 - JQuery
 - Ajax
 - Bootstrap
+- Javascript
 
 ## Data Base
 - Postgresql via JDBC com dependências do maven
