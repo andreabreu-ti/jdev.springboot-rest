@@ -1,5 +1,8 @@
 # Projeto CRUD Completo com Spring Boot REST API
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/devsuperior/sds1-wmazoni/blob/master/LICENSE) 
+![Java](https://img.shields.io/badge/Java-%23ED8B00.svg??style=for-the-badge&logo=openjdk&logoColor=white)
+[![Eclipse Badge](https://badgen.net/badge/icon/eclipse?icon=eclipse&label)]()
+[![Postgresql Badge](https://badgen.net/badge/icon/postgresql?icon=postgresql&label)]()
+[![Maven Badge](https://badgen.net/badge/icon/maven?icon=maven&label)]()
 
 CRUD Completo com Spring Boot REST API
 
